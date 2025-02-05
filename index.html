@@ -1,69 +1,21 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Example</title>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <div class="container">
+        <h1 id="header">Hello, World!</h1>
+        <div class="buttons">
+            <button onclick="changeHeader()">Change Header</button>
+            <button onclick="changeBack()">Change Header Back</button>
+            <button onclick="combineBoth()">Combine Both</button>
+        </div>
+    </div>
 
-    <h1 id="header">Hello, World!</h1>
-    <button onclick="changeHeader()">Change Header</button>
-    <button onclick="changeBack()">Change Header Back</button>
-    <button onclick="combineBoth()">combine Both</button>
-    
-    <script>
-    function changeHeader() {
-
-      // Accede al elemento con id 'header'
-
-    const header = document.getElementById('header');
-
-      // Cambia el contenido de texto del elemento
-
-    header.textContent = 'Hello, DOM!';
-
-      // Cambia el color del texto
-
-    header.style.color = 'blue';
-
-    }
-
-    function changeBack() {
-
-// Accede al elemento con id 'header'
-
-const header = document.getElementById('header');
-
-// Cambia el contenido de texto del elemento
-
-header.textContent = 'Hello, World!';
-
-// Cambia el color del texto
-
-header.style.color = 'black';
-
-    }
-
-    function combineBoth() {
-
-// Accede al elemento con id 'header'
-
-const header = document.getElementById('header');
-
-// Cambia el contenido de texto del elemento
-
-header.textContent = 'Hello World! Hello DOM!';
-
-// Cambia el color del texto
-
-header.style.color = 'red';
-
-    }
-
-    </script>
-
+    <script src="script.js"></script>
 </body>
+</html>
